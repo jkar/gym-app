@@ -1,0 +1,149 @@
+-- Create database (run this separately in psql shell or in an admin tool)
+-- CREATE DATABASE personal_trainer;
+
+-- EDUCATIONAL_LEVEL
+CREATE TABLE educational_level (
+    id SERIAL PRIMARY KEY,
+    level VARCHAR(50) NOT NULL
+);
+
+-- FAMILY_STATUS
+CREATE TABLE family_status (
+    id SERIAL PRIMARY KEY,
+    status VARCHAR(30) NOT NULL
+);
+
+-- CITY
+CREATE TABLE city (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(30) NOT NULL
+);
+
+-- PROFESSION
+CREATE TABLE profession (
+    id SERIAL PRIMARY KEY,
+    description VARCHAR(30) NOT NULL
+);
+
+-- CUSTOMER
+CREATE TABLE customer (
+    id SERIAL PRIMARY KEY,
+    profession_id INT NOT NULL,
+    city_id INT NOT NULL,
+    educational_level_id INT NOT NULL,
+    family_status_id INT NOT NULL,
+    firstname VARCHAR(50) NOT NULL,
+    lastname VARCHAR(50) NOT NULL,
+    address VARCHAR(80) NOT NULL,
+    birth_date DATE NOT NULL,
+    registration_date DATE NOT NULL,
+    customer_balance NUMERIC(19,4) DEFAULT 0,
+    FOREIGN KEY (profession_id) REFERENCES profession(id),
+    FOREIGN KEY (city_id) REFERENCES city(id),
+    FOREIGN KEY (educational_level_id) REFERENCES educational_level(id),
+    FOREIGN KEY (family_status_id) REFERENCES family_status(id),
+    CONSTRAINT check_birthdate CHECK (birth_date < CURRENT_DATE),
+    CONSTRAINT check_registration_date CHECK (registration_date <= CURRENT_DATE),
+    CONSTRAINT check_registration_date2 CHECK (registration_date > birth_date)
+);
+
+-- ANNUAL_QUARTERS
+CREATE TABLE annual_quarters (
+    id SERIAL PRIMARY KEY,
+    mass_registration_date DATE NOT NULL
+);
+
+-- PERSONAL_MEDICAL_DATA
+CREATE TABLE personal_medical_data (
+    id SERIAL PRIMARY KEY,
+    customer_id INT NOT NULL,
+    annual_quarters_id INT NOT NULL,
+    fat_mass_percentage DECIMAL(8,2) NOT NULL,
+    body_mass_index DECIMAL(8,2) NOT NULL,
+    cardiorespiratory_function INT NOT NULL,
+    musculoskeletal_function INT NOT NULL,
+    flexibility_level INT NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customer(id),
+    FOREIGN KEY (annual_quarters_id) REFERENCES annual_quarters(id),
+    CONSTRAINT cardiorespiratory_function_range CHECK (cardiorespiratory_function >= 1 AND cardiorespiratory_function <= 5),
+    CONSTRAINT musculoskeletal_function_range CHECK (musculoskeletal_function >= 1 AND musculoskeletal_function <= 5),
+    CONSTRAINT flexibility_level_range CHECK (flexibility_level >= 1 AND flexibility_level <= 5)
+);
+
+-- TRAINING_SLOT
+CREATE TABLE training_slot (
+    id SERIAL PRIMARY KEY,
+    date_time TIMESTAMP NOT NULL,
+    maximum_number_of_customers INT NOT NULL CHECK (maximum_number_of_customers > 0 AND maximum_number_of_customers <= 10),
+    cost_per_customer NUMERIC(19,4) NOT NULL CHECK (cost_per_customer > 0)
+);
+
+-- TRAINING_SLOT_CUSTOMER
+CREATE TABLE training_slot_customer (
+    id SERIAL PRIMARY KEY,
+    training_slot_id INT NOT NULL,
+    customer_id INT NOT NULL,
+    cancellation BOOLEAN DEFAULT FALSE,
+    presence BOOLEAN DEFAULT FALSE,
+    cancellation_reason VARCHAR(150),
+    payment_amount NUMERIC(19,4) DEFAULT 0,
+    FOREIGN KEY (training_slot_id) REFERENCES training_slot(id),
+    FOREIGN KEY (customer_id) REFERENCES customer(id)
+);
+
+-- HEALTH_PROBLEM_TYPE
+CREATE TABLE health_problem_type (
+    id SERIAL PRIMARY KEY,
+    type VARCHAR(80) NOT NULL
+);
+
+-- HEALTH_PROBLEM
+CREATE TABLE health_problem (
+    id SERIAL PRIMARY KEY,
+    customer_id INT NOT NULL,
+    health_problem_type_id INT NOT NULL,
+    description VARCHAR(150) NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customer(id),
+    FOREIGN KEY (health_problem_type_id) REFERENCES health_problem_type(id)
+);
+
+-- PROGRAM_TYPE
+CREATE TABLE program_type (
+    id SERIAL PRIMARY KEY,
+    type VARCHAR(80) NOT NULL
+);
+
+-- PERSONALIZED_PROGRAM
+CREATE TABLE personalized_program (
+    id SERIAL PRIMARY KEY,
+    customer_id INT NOT NULL,
+    program_type_id INT NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customer(id),
+    FOREIGN KEY (program_type_id) REFERENCES program_type(id),
+    CONSTRAINT check_end_date_program CHECK (start_date < end_date)
+);
+
+-- EXERCISE
+CREATE TABLE exercise (
+    id SERIAL PRIMARY KEY,
+    description VARCHAR(80) NOT NULL
+);
+
+-- PERSONALIZED_PROGRAM_EXERCISE
+CREATE TABLE personalized_program_exercise (
+    id SERIAL PRIMARY KEY,
+    personalised_program_id INT NOT NULL,
+    exercise_id INT NOT NULL,
+    FOREIGN KEY (personalised_program_id) REFERENCES personalized_program(id),
+    FOREIGN KEY (exercise_id) REFERENCES exercise(id)
+);
+
+-- INSTRUCTION
+CREATE TABLE instruction (
+    id SERIAL PRIMARY KEY,
+    personalised_program_exercise_id INT NOT NULL,
+    description VARCHAR(200) NOT NULL,
+    FOREIGN KEY (personalised_program_exercise_id) REFERENCES personalized_program_exercise(id)
+);

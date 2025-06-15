@@ -1,0 +1,171 @@
+--create database
+
+--CREATE DATABASE PERSONAL_TRAINER;
+
+--create tables
+
+--EDUCATIONAL_LEVEL
+CREATE TABLE EDUCATIONAL_LEVEL
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+level VARCHAR(50) NOT NULL
+);
+
+--FAMILY STATUS
+CREATE TABLE FAMILY_STATUS
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+status VARCHAR(30) NOT NULL
+);
+
+--CITY
+CREATE TABLE CITY
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+city name VARCHAR(30) NOT NULL
+);
+
+--PROFESSION
+CREATE TABLE PROFESSION
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+description VARCHAR(30) NOT NULL
+);
+
+--CUSTOMER
+CREATE TABLE CUSTOMER
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+profession_id INT NOT NULL,
+city_id INT NOT NULL,
+educational_level_id INT NOT NULL,
+family_status_id INT NOT NULL,
+firstname VARCHAR(50) NOT NULL,
+lastname VARCHAR(50) NOT NULL,
+address VARCHAR(80) NOT NULL,
+birth_date DATE NOT NULL,
+registration_date DATE NOT NULL,
+customer_balance MONEY DEFAULT 0,
+FOREIGN KEY (profession_id) REFERENCES ΕΠΑΓΓΕΛΜΑ(id),
+FOREIGN KEY (city_id) REFERENCES ΠΟΛΗ(id),
+FOREIGN KEY (educational_level_id) REFERENCES ΕΚΠΑΙΔΕΥΤΙΚΟ_ΕΠΙΠΕΔΟ(id),
+FOREIGN KEY (family_status_id) REFERENCES ΟΙΚΟΓΕΝΕΙΑΚΗ_ΚΑΤΑΣΤΑΣΗ(id),
+CONSTRAINT CHECK_BIRTDATE CHECK (ημερομηνια_γεννησης<SYSDATETIME()),
+CONSTRAINT CHECK_REGISTRATION_DATE CHECK (ημερομηνια_εγγραφης<=SYSDATETIME()),
+CONSTRAINT CHECK_REGISTRATION_DATE2 CHECK (ημερομηνια_εγγραφης>ημερομηνια_γεννησης)
+);
+
+--ΧΡΟΝΙΚΑ_ΤΡΙΜΗΝΑ
+CREATE TABLE ΧΡΟΝΙΚΑ_ΤΡΙΜΗΝΑ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+ημερομηνια_μαζικης_καταχωρησης DATE NOT NULL
+);
+
+--ΠΡΟΣΩΠΙΚΑ_ΙΑΤΡΙΚΑ_ΔΕΔΟΜΕΝΑ
+CREATE TABLE ΠΡΟΣΩΠΙΚΑ_ΙΑΤΡΙΚΑ_ΔΕΔΟΜΕΝΑ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+πελατης_id INT NOT NULL,
+χρονικα_τριμηνα_id INT NOT NULL,
+ποσοστο_μαζας_λιπους DECIMAL(8, 2) NOT NULL,
+δεικτης_μαζας_σωματος DECIMAL(8, 2) NOT NULL,
+καρδιοαναπνευστικη_λειτουργια INT NOT NULL,
+μυοσκελετικη_λειτουργια INT NOT NULL,
+επιπεδο_ευκαμψιας INT NOT NULL,
+FOREIGN KEY (πελατης_id) REFERENCES ΠΕΛΑΤΗΣ(id),
+FOREIGN KEY (χρονικα_τριμηνα_id) REFERENCES ΧΡΟΝΙΚΑ_ΤΡΙΜΗΝΑ(id),
+CONSTRAINT καρδιοαναπνευστικη_λειτουργια_RANGE_ONE_TO_FIVE CHECK (καρδιοαναπνευστικη_λειτουργια>=1 AND καρδιοαναπνευστικη_λειτουργια<=5),
+CONSTRAINT μυοσκελετικη_λειτουργια_RANGE_ONE_TO_FIVE CHECK (μυοσκελετικη_λειτουργια>=1 AND μυοσκελετικη_λειτουργια<=5),
+CONSTRAINT επιπεδο_ευκαμψιας_RANGE_ONE_TO_FIVE CHECK (επιπεδο_ευκαμψιας>=1 AND επιπεδο_ευκαμψιας<=5),
+);
+
+--SLOT_ΠΡΟΠΟΝΗΣΗΣ
+CREATE TABLE SLOT_ΠΡΟΠΟΝΗΣΗΣ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+ημερομηνια_ωρα DATETIME NOT NULL,
+μεγιστος_αριθμος_πελατων INT NOT NULL CHECK (μεγιστος_αριθμος_πελατων>0 AND μεγιστος_αριθμος_πελατων<=10),
+κοστος_ανα_πελατη MONEY NOT NULL CHECK (κοστος_ανα_πελατη>0),
+);
+
+--SLOT_ΠΡΟΠΟΝΗΣΗΣ_ΠΕΛΑΤΗΣ
+CREATE TABLE SLOT_ΠΡΟΠΟΝΗΣΗΣ_ΠΕΛΑΤΗΣ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+slot_προπονησης_id INT NOT NULL,
+πελατης_id INT NOT NULL,
+ακύρωση BIT DEFAULT 0,
+επισκεψη BIT DEFAULT 0,
+αιτια_ακυρωσης VARCHAR(150),
+ποσο_πληρωμης MONEY DEFAULT 0,
+FOREIGN KEY (πελατης_id) REFERENCES ΠΕΛΑΤΗΣ(id),
+FOREIGN KEY (slot_προπονησης_id) REFERENCES SLOT_ΠΡΟΠΟΝΗΣΗΣ(id),
+);
+
+--ΕΙΔΟΣ_ΠΡΟΒΛΗΜΑΤΟΣ_ΥΓΕΙΑΣ
+CREATE TABLE ΕΙΔΟΣ_ΠΡΟΒΛΗΜΑΤΟΣ_ΥΓΕΙΑΣ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+ειδος VARCHAR(80) NOT NULL
+);
+
+--ΠΡΟΒΛΗΜΑ_ΥΓΕΙΑΣ
+CREATE TABLE ΠΡΟΒΛΗΜΑ_ΥΓΕΙΑΣ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+πελατης_id INT NOT NULL,
+ειδος_προβληματος_υγειας_id INT NOT NULL,
+αναλυτικη_περιγραφη VARCHAR(150) NOT NULL
+FOREIGN KEY (πελατης_id) REFERENCES ΠΕΛΑΤΗΣ(id),
+FOREIGN KEY (ειδος_προβληματος_υγειας_id) REFERENCES ΕΙΔΟΣ_ΠΡΟΒΛΗΜΑΤΟΣ_ΥΓΕΙΑΣ(id),
+);
+
+--ΕΙΔΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ
+CREATE TABLE ΕΙΔΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+ειδος VARCHAR(80) NOT NULL
+);
+
+--ΕΞΑΤΟΜΙΚΕΥΜΕΝΟ_ΠΡΟΓΡΑΜΜΑ
+CREATE TABLE ΕΞΑΤΟΜΙΚΕΥΜΕΝΟ_ΠΡΟΓΡΑΜΜΑ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+πελατης_id INT NOT NULL,
+ειδος_προγραμματος_id INT NOT NULL,
+ημερομηνια_εναρξης DATE NOT NULL,
+ημερομηνια_ληξης DATE NOT NULL,
+FOREIGN KEY (πελατης_id) REFERENCES ΠΕΛΑΤΗΣ(id),
+FOREIGN KEY (ειδος_προγραμματος_id) REFERENCES ΕΙΔΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ(id),
+CONSTRAINT CHECK_END_DATE_ΠΡΟΓΡΑΜΜΑ CHECK (ημερομηνια_εναρξης<ημερομηνια_ληξης),
+);
+
+--ΑΣΚΗΣΗ
+CREATE TABLE ΑΣΚΗΣΗ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+ΠΕΡΙΓΡΑΦΗ_ΑΣΚΗΣΗΣ VARCHAR(80) NOT NULL
+);
+
+--ΕΞΑΤΟΜΙΚΕΥΜΕΝΟ_ΠΡΟΓΡΑΜΜΑ_ΑΣΚΗΣΗ
+CREATE TABLE ΕΞΑΤΟΜΙΚΕΥΜΕΝΟ_ΠΡΟΓΡΑΜΜΑ_ΑΣΚΗΣΗ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+εξατομικευμενο_προγραμμα_id INT NOT NULL,
+ασκηση_id INT NOT NULL,
+FOREIGN KEY (εξατομικευμενο_προγραμμα_id) REFERENCES ΕΞΑΤΟΜΙΚΕΥΜΕΝΟ_ΠΡΟΓΡΑΜΜΑ(id),
+FOREIGN KEY (ασκηση_id) REFERENCES ΑΣΚΗΣΗ(id)
+);
+
+--ΟΔΗΓΙΑ
+CREATE TABLE ΟΔΗΓΙΑ
+(
+id INT IDENTITY(1,1) PRIMARY KEY,
+εξατομικευμενο_προγραμμα_ασκηση_id INT NOT NULL,
+περιγραφη VARCHAR(200) NOT NULL
+FOREIGN KEY (εξατομικευμενο_προγραμμα_ασκηση_id) REFERENCES ΕΞΑΤΟΜΙΚΕΥΜΕΝΟ_ΠΡΟΓΡΑΜΜΑ_ΑΣΚΗΣΗ(id)
+);
+
+
+
