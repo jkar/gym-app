@@ -1,53 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\",
+  "WorkspaceRootPath": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\repositories\\trainingslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:repositories\\trainingslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\models\\dto\\healthproblemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:models\\dto\\healthproblemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\models\\domain\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\models\\domain\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:models\\domain\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\models\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\models\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:models\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\models\\domain\\healthproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:models\\domain\\healthproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\models\\domain\\trainingslotcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:models\\domain\\trainingslotcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\repositories\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:repositories\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\models\\dto\\trainingslotcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:models\\dto\\trainingslotcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\models\\dto\\trainingslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:models\\dto\\trainingslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\repositories\\interfaces\\itrainingslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:repositories\\interfaces\\itrainingslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\models\\domain\\trainingslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:models\\domain\\trainingslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\data\\trainerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\repositories\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:repositories\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\controllers\\trainingslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:controllers\\trainingslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\models\\domain\\healthproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:models\\domain\\healthproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\data\\trainerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:data\\trainerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer app\\trainerapi\\trainerapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|c:\\users\\giank\\source\\repos\\trainer-app\\trainerapi\\trainerapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3509F698-70F2-4763-B3A9-DEA11D34B365}|trainerApi.csproj|solutionrelative:trainerapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -58,75 +82,184 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HealthProblemDTO.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Models\\DTO\\HealthProblemDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\HealthProblemDTO.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Models\\DTO\\HealthProblemDTO.cs",
-              "RelativeToolTip": "Models\\DTO\\HealthProblemDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "TrainingSlotDTO.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\DTO\\TrainingSlotDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\TrainingSlotDTO.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\DTO\\TrainingSlotDTO.cs",
+              "RelativeToolTip": "Models\\DTO\\TrainingSlotDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T13:34:32.083Z"
+              "WhenOpened": "2025-06-15T19:21:29.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\DTO\\CustomerDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\CustomerDTO.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\DTO\\CustomerDTO.cs",
+              "RelativeToolTip": "Models\\DTO\\CustomerDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T12:09:53.823Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CustomerDTO.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Models\\DTO\\CustomerDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\CustomerDTO.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Models\\DTO\\CustomerDTO.cs",
-              "RelativeToolTip": "Models\\DTO\\CustomerDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
+              "Title": "TrainingSlotCustomerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\DTO\\TrainingSlotCustomerDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\TrainingSlotCustomerDTO.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\DTO\\TrainingSlotCustomerDTO.cs",
+              "RelativeToolTip": "Models\\DTO\\TrainingSlotCustomerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T12:09:53.823Z"
+              "WhenOpened": "2025-06-29T14:17:19.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrainingSlotRepository.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Repositories\\TrainingSlotRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TrainingSlotRepository.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Repositories\\TrainingSlotRepository.cs",
+              "RelativeToolTip": "Repositories\\TrainingSlotRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:59:24.385Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Models\\Domain\\Customer.cs",
-              "RelativeDocumentMoniker": "Models\\Domain\\Customer.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Models\\Domain\\Customer.cs",
-              "RelativeToolTip": "Models\\Domain\\Customer.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAswCMAAAA8AAAAAAAAAA==",
+              "Title": "TrainingSlotCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\Domain\\TrainingSlotCustomer.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\TrainingSlotCustomer.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\Domain\\TrainingSlotCustomer.cs",
+              "RelativeToolTip": "Models\\Domain\\TrainingSlotCustomer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T12:02:28.847Z"
+              "WhenOpened": "2025-06-29T15:08:51.649Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Repositories\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Repositories\\CustomerRepository.cs",
-              "RelativeToolTip": "Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\Domain\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\Customer.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\Domain\\Customer.cs",
+              "RelativeToolTip": "Models\\Domain\\Customer.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACsAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T10:23:25.075Z"
+              "WhenOpened": "2025-06-09T12:02:28.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITrainingSlotRepository.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Repositories\\Interfaces\\ITrainingSlotRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ITrainingSlotRepository.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Repositories\\Interfaces\\ITrainingSlotRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\ITrainingSlotRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:29:22.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TrainingSlot.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\Domain\\TrainingSlot.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\TrainingSlot.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\Domain\\TrainingSlot.cs",
+              "RelativeToolTip": "Models\\Domain\\TrainingSlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T19:20:45.124Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T14:00:20.203Z"
+              "WhenOpened": "2025-06-09T10:23:25.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:13:06.138Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:18:57.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T14:00:20.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TrainingSlotController.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Controllers\\TrainingSlotController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TrainingSlotController.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Controllers\\TrainingSlotController.cs",
+              "RelativeToolTip": "Controllers\\TrainingSlotController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:58:16.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -134,24 +267,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T10:13:06.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "HealthProblem.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Models\\Domain\\HealthProblem.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\Domain\\HealthProblem.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\HealthProblem.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Models\\Domain\\HealthProblem.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Models\\Domain\\HealthProblem.cs",
               "RelativeToolTip": "Models\\Domain\\HealthProblem.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -159,11 +279,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -171,23 +291,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ICustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Repositories\\Interfaces\\ICustomerRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ICustomerRepository.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Repositories\\Interfaces\\ICustomerRepository.cs",
-              "RelativeToolTip": "Repositories\\Interfaces\\ICustomerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T10:18:57.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "TrainerDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Data\\TrainerDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Data\\TrainerDbContext.cs",
               "RelativeDocumentMoniker": "Data\\TrainerDbContext.cs",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\Data\\TrainerDbContext.cs",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\Data\\TrainerDbContext.cs",
               "RelativeToolTip": "Data\\TrainerDbContext.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwBcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -195,11 +303,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "trainerApi.csproj",
-              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\trainerApi.csproj",
+              "DocumentMoniker": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\trainerApi.csproj",
               "RelativeDocumentMoniker": "trainerApi.csproj",
-              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer app\\trainerApi\\trainerApi.csproj",
+              "ToolTip": "C:\\Users\\giank\\source\\repos\\trainer-app\\trainerApi\\trainerApi.csproj",
               "RelativeToolTip": "trainerApi.csproj",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

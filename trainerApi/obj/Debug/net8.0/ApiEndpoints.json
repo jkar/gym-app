@@ -10,6 +10,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "trainerApi.Controllers.TrainingSlotController",
+    "Method": "GetTrainingSlotsPaginated",
+    "RelativePath": "api/TrainingSlot/getTrainingSlotsPaginated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "trainerApi.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

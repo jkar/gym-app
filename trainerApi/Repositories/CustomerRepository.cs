@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 using trainerApi.Data;
 using trainerApi.Models.Domain;
 using trainerApi.Models.DTO;
@@ -13,13 +14,36 @@ namespace trainerApi.Repositories
             this.dbContext = dbContext;
         }
 
-        //SELECT c.firstname, c.lastname, ts.date_time, ts.cost_per_customer
-        //    FROM public.customer as c
-        //    left outer join public.training_slot_customer as tsc
-        //    on c.id = tsc.customer_id
-        //    left outer join public.training_slot as ts
-        //    on tsc.training_slot_id = ts.id
-        //    where ts.date_time between '2024/04/16' and '2024/05/27';
+        //SELECT
+        //    c.id AS customer_id,
+        //    c.firstname,
+        //    c.lastname,
+        //    city.name AS city_name,
+        //    el.level AS educational_level,
+
+        //    hp.description AS health_problem_description,
+        //    hpt.type AS health_problem_type,
+
+        //    ts.date_time AS training_slot_datetime,
+        //    ts.maximum_number_of_customers,
+        //    ts.cost_per_customer
+
+        //FROM customer c
+
+        //// Join related tables
+        //LEFT JOIN city ON c.city_id = city.id
+        //LEFT JOIN educational_level el ON c.educational_level_id = el.id
+
+        //// Health Problems
+        //LEFT JOIN health_problem hp ON c.id = hp.customer_id
+        //LEFT JOIN health_problem_type hpt ON hp.health_problem_type_id = hpt.id
+
+        //// Training Slot Info
+        //LEFT JOIN training_slot_customer tsc ON c.id = tsc.customer_id
+        //LEFT JOIN training_slot ts ON tsc.training_slot_id = ts.id
+
+        //// Filter only those with training slot within date range
+        //WHERE ts.date_time BETWEEN '2024-04-01' AND '2024-06-01';
         public async Task<List<CustomerDTO>> GetAllAsync()
 
         {

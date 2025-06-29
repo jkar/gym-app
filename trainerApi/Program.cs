@@ -17,6 +17,7 @@ options.UseNpgsql(builder.Configuration.GetConnectionString("TrainerConnectionSt
 );
 
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ITrainingSlotRepository, TrainingSlotRepository>();
 
 
 var app = builder.Build();
